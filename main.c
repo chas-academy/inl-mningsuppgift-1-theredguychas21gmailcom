@@ -9,49 +9,45 @@ int main()
     int dice_roll = (rand() % 6) + 1;
     for (int i = 0; i < 100; i++){
         dice_rolls[i] = (rand() % 6) + 1;
-        /*printf("%d\n", dice_rolls[i]);*/
+        //printf("%d\n", dice_rolls[i]);
     }    
-    
-
-    int num1 = 0;
-    int num2 = 0;
-    int num3 = 0;
-    int num4 = 0;
-    int num5 = 0;
-    int num6 = 0;
+    int one = 0;
+    int two = 0;
+    int three = 0;
+    int four = 0;
+    int five = 0;
+    int six = 0;
     int sum = 0;
 
     for(int i = 0; i < 100; i++){
         if(dice_rolls[i] == 1){
-            num1++;
+            one++;
         }
         if(dice_rolls[i] == 2){
-            num2++;
+            two++;
         }
         if(dice_rolls[i] == 3){
-            num3++;
+            three++;
         }
         if(dice_rolls[i] == 4){
-            num4++;
+            four++;
         }
         if(dice_rolls[i] == 5){
-            num5++;
+            five++;
         }
         if(dice_rolls[i] == 6){
-            num6++;
+            six++;
         }
         sum+=dice_rolls[i];
     }
-    printf("%d\n", num1);
-    printf("%d\n", num2);
-    printf("%d\n", num3);
-    printf("%d\n", num4);
-    printf("%d\n", num5);
-    printf("%d\n", num6);
-
+    printf("%d\n", one);
+    printf("%d\n", two);
+    printf("%d\n", three);
+    printf("%d\n", four);
+    printf("%d\n", five);
+    printf("%d\n", six);
     printf("%d\n", sum);
     printf("%.1f\n", sum/100.0);
-    
 
     // Your code goes here
 
